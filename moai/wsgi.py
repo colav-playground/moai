@@ -58,7 +58,8 @@ class WSGIRequest(object):
         response = Response()
         response.content_type = mimetype
         response.status = int(code.split()[0])
-        response.body = msg
+        #response.body = msg
+        response.text = msg
         return response
 
 

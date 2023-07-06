@@ -160,7 +160,7 @@ class SQLDatabase(object):
             if hasattr(obj, 'isoformat'):
                 return obj.isoformat()
             else:
-                raise TypeError, 'Object of type %s with value of %s is not JSON serializable' % (type(obj), repr(obj))
+                raise TypeError('Object of type %s with value of %s is not JSON serializable' % (type(obj), repr(obj)))
 
         metadata = json.dumps(metadata, default=date_handler)
         self._cache['records'][oai_id] = (dict(modified=modified,

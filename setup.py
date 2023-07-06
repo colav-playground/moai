@@ -60,6 +60,7 @@ setup(
     'pasteDeploy',
     'pasteScript',
     'sqlalchemy',
+    'wsgiserver'
     ],
     test_suite='moai.test.suite'
 )
